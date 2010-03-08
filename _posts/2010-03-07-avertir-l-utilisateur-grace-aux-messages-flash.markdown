@@ -2,6 +2,7 @@
 layout: post
 title: Avertir l'utilisateur grâce aux messages flash
 category: interaction
+auteur: Matthieu Sadouni
 chapo: Nous avons très souvent besoin dans une application de tenir l'utilisateur informé sur le résultat de ses actions. Cela peut être pour l'informer que son compte a bien été créé, qu'il y a une erreur de saisie dans un formulaire, etc. Il faut pouvoir créer ces messages dans les contrôleurs, puis les afficher sur la page suivante dans une boîte de couleur correspondant au type de message.
 description: |
   Comment avertir l'utilisateur du résultat de ses actions grâce à des messages d'information.

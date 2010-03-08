@@ -2,6 +2,7 @@
 layout: post
 title: Activation d'un compte utilisateur avec Authlogic
 category: authentification
+auteur: Matthieu Sadouni
 chapo: Lors de l'inscription d'un utilisateur, nous souhaitons vérifier que l'email donné est valide avant d'activer son compte. Voyons comment réaliser cela de manière élégante avec Authlogic.
 description: |
   Comment vérifier avec Authlogic l'email d'un utilisateur souhaitant s'inscrire.

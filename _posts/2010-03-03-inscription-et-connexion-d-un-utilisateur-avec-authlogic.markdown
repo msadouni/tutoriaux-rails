@@ -2,6 +2,7 @@
 layout: post
 title: Inscription et connexion d'un utilisateur avec Authlogic
 category: authentification
+auteur: Matthieu Sadouni
 chapo: La gestion d'utilisateurs est une tâche récurrente, sinon systématique lors du développement d'une application Web. Nous allons voir comment utiliser le plugin Authlogic pour faciliter cette tâche.
 description: |
   Comment installer et configurer Authlogic pour permettre l'inscription et la connexion d'un utilisateur.

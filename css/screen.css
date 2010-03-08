@@ -68,7 +68,7 @@ body {
 #main h1 a:hover {
     color: #852A2C;
 }
-#main .date {
+#main .date, #main .auteur {
     margin-bottom: 1em;
     color: #999;
 }

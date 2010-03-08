@@ -6,6 +6,7 @@ title: accueil
 <div id="post">
   <h1><a href="{{ first_post.url }}">{{ first_post.title }}</a></h1>
   <div class="date">publié le {{ first_post.date | date:"%d/%m/%Y" }}</div>
+  <div class="auteur">auteur : {{ first_post.auteur }}</div>
   <p>{{ first_post.chapo }}</p>
   {{ first_post.content }}
   <a class="more" href="{{ first_post.url }}#disqus">Commentaires &raquo;</a>
@@ -16,6 +17,7 @@ title: accueil
     {% assign second_post = site.posts[1] %}
     <h3><a href="{{ second_post.url }}">{{ second_post.title }}</a></h3>
     <div class="date">publié le {{ second_post.date | date:"%d/%m/%Y" }}</div>
+    <div class="auteur">auteur : {{ second_post.auteur }}</div>
     <p>{{ second_post.chapo }}</p>
     <a class="more" href="{{ second_post.url }}">Lire la suite &raquo;</a>
   </div>
@@ -23,6 +25,7 @@ title: accueil
     {% assign third_post = site.posts[2] %}
     <h3><a href="{{ third_post.url }}">{{ third_post.title }}</a></h3>
     <div class="date">publié le {{ third_post.date | date:"%d/%m/%Y" }}</div>
+    <div class="auteur">auteur : {{ third_post.auteur }}</div>
     <p>{{ third_post.chapo }}</p>
     <a class="more" href="{{ third_post.url }}">Lire la suite &raquo;</a>
   </div>

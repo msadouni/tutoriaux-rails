@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Démarrer une nouvelle application Rails avec Git et un modèle
-categories: 
+categories:
 - configuration
 - git
+auteur: Matthieu Sadouni
+chapo:
 description: |
   Comment utiliser un modèle d'application pour la génération et le versionning avec Git pour faciliter la création d'un projet Rails.
 ---

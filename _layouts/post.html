@@ -5,6 +5,7 @@ layout: default
 <div id="post">
   <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
   <div class="date">publié le {{ page.date | date:"%d/%m/%Y" }}</div>
+  <div class="auteur">auteur : {{ page.auteur }}</div>
   <p>{{ page.chapo }}</p>
   {{ content }}
   <div id="disqus">

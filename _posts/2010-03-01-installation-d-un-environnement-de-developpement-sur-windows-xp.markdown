@@ -2,6 +2,8 @@
 layout: post
 title: Installation d'un environnement de développement Rails sur Windows XP
 category: configuration
+auteur: Matthieu Sadouni
+chapo:
 description: |
   Toutes les étapes et outils pour installer un environnement complet de développement Rails sur Windows XP : MacPorts, Git, MySQL, Ruby et Rails.
 ---
