@@ -39,10 +39,6 @@ body {
     font-size: 1.33em;
     margin: 1.33em 0 0 1em;
 }
-#sidebar {
-    position: fixed;
-    left: 830px;
-}
 #sidebar ul {
     margin: 0;
     padding: 0;
