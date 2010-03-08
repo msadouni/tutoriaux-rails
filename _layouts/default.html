@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>{{ page.title }} // tutoriaux rails</title>
+   <meta name="description" content="{{ page.description }}">
+   <meta name="author" content="Matthieu Sadouni" />
+   <!-- <link href="http://feeds2.feedburner.com/LitanyAgainstFear" rel="alternate" title="RSS" type="application/rss+xml" /> -->
+   <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection">
+   <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print">
+   <!--[if lt IE 8]><link rel="stylesheet" href="/css/blueprint/ie.css" 
+     type="text/css" media="screen, projection"><![endif]-->
+</head>
+<body>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6909191-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+    })();
+
+  </script>
+  <div class="container">
+    <div id="header">
+      <h1><a href="/">tutoriaux rails</a></h1>
+      <h2>exemples et astuces d'utilisation du framework ruby on rails</h2>
+    </div>
+    <div id="main" class="prepend-2 span-17 append-1">
+      {{ content }}
+    </div>
+    <div id="sidebar" class="span-4 last">
+      <div id="links">
+        <ul>
+          <li><a href="/a-propos.html">à propos</a></li>
+          <li><a href="mailto:matthieusadouni@gmail.com">email</a></li>
+          <!-- <li><a href="http://feeds2.feedburner.com/">rss</a></li> -->
+          <li><a href="/atom.xml">rss</a></li>
+          <li><a href="http://twitter.com/msadouni">twitter</a></li>
+        </ul>
+      </div>
+      <div id="categories">
+        <h3>catégories</h3>
+        <ul>
+            <li><a href="/authentification.html">authentification ({{ site.categories.authentification | size }})</a></li>
+            <li><a href="/configuration.html">configuration ({{ site.categories.configuration | size }})</a></li>
+            <li><a href="/git.html">git ({{ site.categories.git | size }})</a></li>
+            <li><a href="/interaction.html">interaction ({{ site.categories.interaction | size }})</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="footer" class="prepend-2 span-22 last">
+      <a href="http://github.com/msadouni/tutoriaux-rails">versionné sur github</a>
+      //
+      <a href="http://github.com/mojombo/jekyll">généré par jekyll</a>
+      //
+      <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">sous license creative commons</a>
+      //
+      <a href="http://www.alwaysdata.com">hébergé par alwaysdata</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+  //<![CDATA[
+  (function() {
+  	var links = document.getElementsByTagName('a');
+  	var query = '?';
+  	for(var i = 0; i < links.length; i++) {
+  	if(links[i].href.indexOf('#disqus_thread') >= 0) {
+  		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+  	}
+  	}
+  	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/tutoriaux-rails/get_num_replies.js' + query + '"></' + 'script>');
+  })();
+  //]]>
+  </script>
+</body>
+</html>

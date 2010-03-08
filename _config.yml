@@ -1,0 +1,5 @@
+permalink: /articles/:title
+pygments: true
+exclude:
+- README.markdown
+- Rakefile

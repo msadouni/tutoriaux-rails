@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div id="post">
+  <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+  <div class="date">publié le {{ page.date | date:"%d/%m/%Y" }}</div>
+  <p>{{ page.chapo }}</p>
+  {{ content }}
+  <div id="disqus">
+    <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/tutoriaux-rails/embed.js"></script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=tutoriaux-rails">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
