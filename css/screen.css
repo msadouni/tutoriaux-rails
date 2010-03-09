@@ -135,7 +135,7 @@ body {
     padding-left: 1em;
     list-style: inside;
 }
-#main #archives li span {
+#main #archives li span, #main #chronologie li span {
     margin-left: 1em;
     color: #999;
 }
