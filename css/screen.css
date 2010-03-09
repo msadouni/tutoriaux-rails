@@ -138,6 +138,7 @@ body {
 #main #archives li span, #main #chronologie li span, #main #related li span {
     margin-left: 1em;
     color: #999;
+    font-size: 0.857em;
 }
 
 #footer {
