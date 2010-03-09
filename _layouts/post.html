@@ -8,6 +8,14 @@ layout: default
   <div class="auteur">auteur : {{ page.auteur }}</div>
   <p>{{ page.chapo }}</p>
   {{ content }}
+  <div id="related">
+    <h2>articles similaires</h2>
+    <ul class="posts">
+      {% for post in site.related_posts limit:3 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a><span>{{ post.date | date:"%d/%m/%Y" }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
   <div id="disqus">
     <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/tutoriaux-rails/embed.js"></script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=tutoriaux-rails">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
   </div>
