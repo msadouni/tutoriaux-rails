@@ -10,7 +10,7 @@ description: |
 
 [Authlogic][authlogic] est une solution simple et élégante pour gérer l'inscription et la connexion d'utilisateurs. Voyons comment l'intégrer à un site existant.
 
-## Installation
+### Installation
 
 Nous commençons par indiquons dans `config/environment.rb` que notre application utilise la gem Authlogic :
 
@@ -33,7 +33,7 @@ Nous installons ensuite la gem et décompressons son code dans le répertoire `v
 
 Nous paramétrons ensuite notre application pour Authlogic. Une [application exemple][authlogic-exemple] avec les instructions d'installation et des explications est disponible sur github. Nous en reprenons ici les différentes étapes.
 
-## Création du modèle UserSession
+### Création du modèle UserSession
 
 Authlogic permet de gérer des sessions gérées comme un modèle ActiveRecord. Elles peuvent êtres créées et détruites par un controller RESTful que nous allons créer par la suite. Nous créons le modèle `UserSession` grâce au générateur fourni :
 
@@ -56,7 +56,7 @@ Nous ajoutons enfin une route pour la création et destruction de la session :
     map.resource :user_session
     {% endhighlight %}
 
-## Création du modèle User
+### Création du modèle User
 
 Avoir une gestion des sessions est pratique, mais encore faut-il avoir des utilisateurs à authentifier ! Créons un modèle User :
 
@@ -114,7 +114,7 @@ Nous pouvons maintenant mettre à jour la base de données avec la migration :
     rake db:migrate
     {% endhighlight %}
 
-## Configuration du modèle User
+### Configuration du modèle User
 
 Nous allons maintenant indiquer qu'un utilisateur est identifié par Authlogic. Il suffit d'ajouter une ligne au modèle `User` :
 
@@ -140,7 +140,7 @@ Pour le moment nous conservons la configuration par défaut. Par la suite il ser
 
 La [documentation d'Authlogic][doc-authlogic] donne la liste des options disponibles pour chaque module dans `Authlogic::ActsAsAuthentic::<module>::Config`.
 
-## Inscription des utilisateurs
+### Inscription des utilisateurs
 
 Nos modèles sont prêts, nous pouvons démarrer la réalisation des différentes actions. Nous allons commencer par permettre aux utilisateurs de s'inscrire. Nous créons tout d'abord un contrôleur `UsersController` :
 
@@ -216,7 +216,7 @@ Nous pouvons maintenant nous rendre sur `http://localhost:3000/users/new` et rem
 
 Nous voyons les informations de notre utilisateur s'afficher, nous pouvons maintenant nous intéresser à sa connexion.
 
-## Connexion et déconnexion des utilisateurs
+### Connexion et déconnexion des utilisateurs
 
 Une fois l'utilisateur créé, nous devons lui permettre de se connecter. Nous commençons par créer une page d'accueil sur laquelle nous verrons :
 

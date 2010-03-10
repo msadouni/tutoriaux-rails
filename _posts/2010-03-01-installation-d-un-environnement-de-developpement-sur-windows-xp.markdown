@@ -11,7 +11,7 @@ description: |
 
 J'utilise Mac OS X, les instructions pour Windows XP sont donc indicatives.
 
-## Installation de Git
+### Installation de Git
 
 La meilleure option pour installer Git sur Windows semble être par l'intermédiaire de [msysGit](msysgit). Nous téléchargeons la dernière version stable et lançons l'installation.
 
@@ -22,7 +22,7 @@ La meilleure option pour installer Git sur Windows semble être par l'intermédi
 - si vous travaillez avec des personnes sur Unix (Linux, Mac OS X), ou participez à des projets open source, choisissez l'option 1
 - si vous travaillez seul sous Windows ou avec d'autres personnes toutes sur Windows, choisissez l'option 2
 
-## Installation de MySQL
+### Installation de MySQL
 
 Nous téléchargeons [la version Community Server de MySQL][mysql] en choissisant Windows, Windows Essentials, Pick a mirror.
 
@@ -35,7 +35,7 @@ Nous téléchargeons [la version Community Server de MySQL][mysql] en choissisan
 
 Nous voyons la liste des bases de données par défaut (information_schema, mysql et test), MySQL fonctionne.
 
-## Installation de Ruby et Rails
+### Installation de Ruby et Rails
 
 Nous téléchargeons le [programme d'installation de Ruby 1.8.6 pour Windows][ruby] et l'exécutons. Il faut ensuite cocher "Enable RubyGems" et "European Keyboard".
 
@@ -62,22 +62,22 @@ Dernière petite chose, il semble y avoir parfois des soucis avec la connexion M
 
 Nous voilà fin prêts pour démarrer le développement d'une application !
 
-## Autres outils
+### Autres outils
 
 Voici une liste non exhaustive de logiciels facilitant le développement.
 
-### Éditeurs de texte et IDE
+#### Éditeurs de texte et IDE
 
 - [Komodo Edit][komodo] :  une version libre de l'IDE d'ActiveState
 - [Aptana][aptana] : une version d'Eclipse adapté au développement avec Ruby On Rails
 - [E-Editor][e-editor] : un clone de TextMate pour Windows, compatible avec les bundles de TextMate
 
-### GUI pour MySQL
+#### GUI pour MySQL
 
 - [SQLyog][sqlyog]
 - [MySQL GUI Tools][mysqlguitools]
 
-### GUI pour Git
+#### GUI pour Git
 
 Nous reviendrons dans un prochain article sur l'utilisation de Git. En attendant, voici quelques outils pour en faciliter l'utilisation.
 

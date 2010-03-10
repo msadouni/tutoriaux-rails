@@ -13,7 +13,7 @@ description: |
 
 Nous allons voir comment utiliser les modèles d'application pour générer un squelette incluant d'office les fonctionnalités couramment utilisées.
 
-## Les modèles d'application
+### Les modèles d'application
 
 Les modèles d'application sont de simple fichiers Ruby contenant du code permettant d'effectuer un certain nombre d'actions à la création d'une application. Différentes méthodes sont disponibles, permettant d'inclure une gem ou un plugin, de manipuler git, de créer une route, de lancer un script, etc.
 
@@ -35,7 +35,7 @@ Nous allons créer un fichier modèle qui réalise les actions suivantes :
 - installation de gems et de plugins
 - configuration de la base de données
 
-## Gestion de source avec Git
+### Gestion de source avec Git
 
 Comme nous allons versionner notre code avec Git, nous profitons du modèle d'application pour exécuter les commandes permettant d'initialiser un dépôt et de le paramétrer pour ignorer les fichiers qui ne seront pas versionnés : fichiers de configuration, de logs, temporaires...
 
@@ -69,7 +69,7 @@ La méthode `run` permet d'exécuter directement une commande shell.
 
 La méthode `file` permet de créer un fichier avec un contenu donné.
 
-## Installation de gems et plugins
+### Installation de gems et plugins
 
 Une fois notre dépôt initialisé, nous allons pouvoir ajouter les gems et plugins couramment utilisés. Pour le moment nous nous en tiendrons au minimum : la pagination de résultats avec [WillPaginate](will_paginate). Le plugin d'inscription et de connexion des utilisateurs nécessitant plus d'explications, il fera l'objet d'un prochain article.
 
@@ -89,7 +89,7 @@ Nous allons également "freezer" Rails à la version utilisée dans l'applicatio
     rake 'rails:freeze:edge RELEASE=2.3.5'
     {% endhighlight %}
 
-## Configuration de la base de données
+### Configuration de la base de données
 
 Par défaut, Rails utilise en mode de développement la base de données SQLite. Or nous avons installé à l'[étape précédente](installation-environnement) MySQL pour retrouver en développement la même configuration que sur notre futur serveur de production. Il nous faut donc modifier le fichier de configuration de la base de données pour y indiquer nos paramètres :
 
@@ -113,7 +113,7 @@ Par défaut, Rails utilise en mode de développement la base de données SQLite.
 
 La méthode `ask` permet de demander des valeurs à l'utilisateur et de les utiliser ensuite. Il existe également les méthodes `yes?` et `no?` qui permettent d'effectuer ou non des actions suivant la réponse de l'utilisateur.
 
-## Finalisation
+### Finalisation
 
 L'application est maintenant prête à être créée, il ne nous reste plus qu'à enregistrer le code dans le dépôt et commiter :
 

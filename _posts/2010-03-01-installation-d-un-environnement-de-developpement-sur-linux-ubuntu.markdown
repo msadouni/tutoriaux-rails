@@ -11,7 +11,7 @@ description: |
 
 J'utilise Mac OS X, les instructions pour Ubuntu sont donc indicatives.
 
-## Installation de Git
+### Installation de Git
 
 Nous commençons par mettre à jour la liste des paquets disponibles pour apt-get :
 
@@ -25,7 +25,7 @@ puis nous installons Git grâce à apt-get :
     sudo apt-get install git-core
     {% endhighlight %}
 
-## Installation de MySQL
+### Installation de MySQL
 
 Nous installons MySQL grâce à apt-get :
 
@@ -42,7 +42,7 @@ Vérifions que le serveur fonctionne :
 
 Nous voyons la liste des bases de données par défaut (information_schema, mysql et test), MySQL fonctionne. Plusieurs outils de gestion des bases sont disponibles via le centre de téléchargement Ubuntu.
 
-## Installation de Ruby et Rails
+### Installation de Ruby et Rails
 
 Nous installons Ruby et RubyGems grâce à apt-get :
 
@@ -78,21 +78,21 @@ Nous pouvons alors tester l'ensemble des programmes installés :
 
 Nous voilà fin prêts pour démarrer le développement d'une application !
 
-## Autres outils
+### Autres outils
 
 Voici une liste non exhaustive de logiciels facilitant le développement.
 
-### Éditeurs de texte et IDE
+#### Éditeurs de texte et IDE
 
 - [Komodo Edit][komodo] :  une version libre de l'IDE d'ActiveState
 - [Aptana][aptana] : une version d'Eclipse adapté au développement avec Ruby On Rails
 - un grand nombre d'autres éditeurs sont disponibles par apt-get ou par le Centre de logiciels : emacs, vi, bluefish...
 
-### GUI pour MySQL
+#### GUI pour MySQL
 
 - MySQL GUI Tools et plusieurs autres sont disponibles sur le Centre de logiciels
 
-### GUI pour Git
+#### GUI pour Git
 
 Nous reviendrons dans un prochain article sur l'utilisation de Git. En attendant, voici quelques outils pour en faciliter l'utilisation.
 

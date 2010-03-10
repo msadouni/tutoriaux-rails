@@ -11,13 +11,13 @@ description: |
 
 Ruby et Ruby On Rails sont fournis sur les versions récentes (10.5 et 10.6) de Mac OS X. Nous allons cependant en installer nos propres versions, cela permettra de les mettre à jour plus facilement par la suite. Nous utilisons pour cela MacPorts.
 
-## Installation de MacPorts et Git
+### Installation de MacPorts et Git
 
 MacPorts est un système de gestion de paquets pour Mac, dans le même genre qu'apt-get sous Debian. Il permet d'installer et de maintenir facilement un grand nombre de logiciels Unix adaptés pour Mac OS X.
 
 Git est un système de [gestion de versions][scm-wikipedia] utilisé notamment pour le développement de Ruby on Rails.
 
-### Installation de MacPorts
+#### Installation de MacPorts
 
 MacPorts nécessite l'installation de XCode, fourni sur le CD de Mac OS X (répertoire Optional Installs) ou disponible sur le site de l'ADC [Apple Developper Connection][adc]. Le téléchargement est gratuit, il suffit de créer un compte.
 
@@ -44,7 +44,7 @@ Puis nous rafraîchissons la session ouverte dans le terminal :
     source ~/.profile
     {% endhighlight %}
 
-### Installation de Git
+#### Installation de Git
 
 Une fois MacPorts installé, nous installons git :
 
@@ -54,7 +54,7 @@ Une fois MacPorts installé, nous installons git :
 
 Après un certain temps (MacPorts compile l'ensemble des dépendances nécessaires à Git) MacPorts et Git sont installés. Nous pouvons passer à l'installation des outils nécessaires au développement proprement dit.
 
-## Installation de MySQL
+### Installation de MySQL
 
 Nous installons MySQL :
 
@@ -95,7 +95,7 @@ Enfin nous vérifions le bon fonctionnement en ligne de commande :
 
 Nous voyons la liste des bases de données par défaut (information_schema, mysql et test), MySQL fonctionne.
 
-## Installation de Ruby et Rails
+### Installation de Ruby et Rails
 
 Nous installons Ruby :
 
@@ -130,24 +130,24 @@ Vérifions les chemins et versions de nos exécutables :
 
 Nous voilà fin prêts pour démarrer le développement d'une application !
 
-## Autres outils
+### Autres outils
 
 Voici une liste non exhaustive de logiciels facilitant le développement.
 
-### Éditeurs de texte et IDE
+#### Éditeurs de texte et IDE
 
 - [Textmate][textmate] : l'éditeur que j'utilise, très puissant notamment grâce à son système de "snippets"
 - [MacVim][macvim] : une version mac du célèbre éditeur vim, très puissant également mais demande un temps d'adaptation assez long
 - [Komodo Edit][komodo] :  une version libre de l'IDE d'ActiveState
 - [Aptana RadRails][aptana] : une version d'Eclipse adapté au développement avec Ruby On Rails
 
-### GUI pour MySQL
+#### GUI pour MySQL
 
 - [Sequel Pro][sequelpro] : celui que j'utilise, très pratique pour les opérations courantes sur les bases de données (visualisation, modifications, import/export...)
 - [MySQL GUI Tools][mysqlguitools]
 - [Navicat][navicat]
 
-### GUI pour Git
+#### GUI pour Git
 
 Nous reviendrons dans un prochain article sur l'utilisation de Git. En attendant, voici quelques outils pour en faciliter l'utilisation.
 
@@ -155,7 +155,7 @@ Nous reviendrons dans un prochain article sur l'utilisation de Git. En attendant
 - [GitNub][gitnub]
 - Git GUI : fourni avec Git, offre sensiblement les mêmes fonctionnalités mais sans l'interface "Mac-like". Se lance avec `git gui`.
 
-### GUI pour MacPorts
+#### GUI pour MacPorts
 
 - [Porticus][porticus] permet de visualiser, d'installer et de désinstaller des paquets
 

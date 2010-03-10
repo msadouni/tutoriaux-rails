@@ -10,7 +10,7 @@ description: |
 
 Cet article est une traduction adaptée du [tutorial de Matt Hooks][tutorial-matt-hooks] et fait suite au [précédent article][article-authlogic] sur l'inscription et la connexion d'utilisateurs.
 
-## Préparation du modèle User
+### Préparation du modèle User
 
 Nous allons ajouter au modèle User une colonne `actif` qui indiquera si l'utilisateur a vérifié son adresse email. Nous commençons par créer une migration :
 
@@ -63,7 +63,7 @@ Authlogic exécute automatiquement la méthode `active?` si elle est présente s
 
 Si nous essayons de nous connecter après nous être inscrit, nous recevons comme prévu un message nous indiquant que notre compte n'est pas actif.
 
-## Activation d'un compte utilisateur
+### Activation d'un compte utilisateur
 
 Nous allons utiliser le `perishable_token` fourni par Authlogic pour le processus d'activation. Lorsqu'un utilisateur s'inscrit, il reçoit un email contenant un lien unique d'activation valable pendant un certain temps (ici une semaine). Ce lien contient le `perishable_token` de l'utilisateur et nous permet de le retrouver. Il n'a plus qu'à cliquer sur "Activer mon compte" pour pouvoir se connecter.
 
@@ -239,7 +239,7 @@ Nous pouvons alors copier/coller dans notre navigateur l'adresse récupérée da
 
 Tout cela est déjà bien pratique, mais ne serait-ce pas mieux si nous étions connecté dès l'activation du compte ? Voyons comment mettre en place ce processus.
 
-## Connexion dès l'activation
+### Connexion dès l'activation
 
 Authlogic connecte automatiquement l'utilisateur lors de la modification du mot de passe, or ici le mot de passe n'a pas été modifié. Nous allons donc modifier le processus pour ne demander que l'email à l'inscription et demander le mot de passe lors de l'activation, connectant ainsi l'utilisateur en même temps.
 
