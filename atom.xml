@@ -7,6 +7,7 @@ layout: nil
  <title>tutoriaux rails</title>
  <link href="http://www.tutoriaux-rails.com/atom.xml" rel="self"/>
  <link href="http://www.tutoriaux-rails.com/"/>
+ <icon>/favicon.ico</icon>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://www.tutoriaux-rails.com/</id>
  <author>
