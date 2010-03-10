@@ -75,6 +75,9 @@ body {
     margin-bottom: 1em;
     color: #999;
 }
+#main .more {
+    text-align: right;
+}
 #main h2, #main h3, #main h4 {
     font-weight: bold;
     color: #852A2C;
