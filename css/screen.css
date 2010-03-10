@@ -125,13 +125,16 @@ body {
 #main #post {
     margin-bottom: 2em;
 }
-#main #derniers-articles {
+#main #articles-recents {
     margin-bottom: 2em;
 }
-#main #derniers-articles h3 a {
+#main #articles-recents .recent-post {
+    margin-bottom: 2em;
+}
+#main #articles-recents .recent-post h3 a {
     text-decoration:none;
 }
-#main #derniers-articles p {
+#main #articles-recents .recent-post p {
     font-size: 1em;
 }
 #main #archives ul {

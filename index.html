@@ -12,28 +12,30 @@ title: accueil
     <a href="{{ first_post.url }}">Lire la suite &raquo;</a>
   </div>
 </div>
-<div id="derniers-articles" class="span-17 last">
+<div id="articles-recents" class="span-17 last">
   <h2>articles récents</h2>
-  <div id="second-post" class="span-8 append-1">
-    {% assign second_post = site.posts[1] %}
-    <h3><a href="{{ second_post.url }}">{{ second_post.title }}</a></h3>
-    <div class="date">publié le {{ second_post.date | date:"%d/%m/%Y" }}</div>
-    <div class="auteur">auteur : {{ second_post.auteur }}</div>
-    <p>{{ second_post.chapo }}</p>
-    <div class="more">
-      <a href="{{ second_post.url }}">Lire la suite &raquo;</a>
+  {% for recent_post in site.posts limit:2 offset:1 %}
+    <div class="recent-post span-8 {% if forloop.first %}append-1{% else %}last{% endif %}">
+      <h3><a href="{{ recent_post.url }}">{{ recent_post.title }}</a></h3>
+      <div class="date">publié le {{ recent_post.date | date:"%d/%m/%Y" }}</div>
+      <div class="auteur">auteur : {{ recent_post.auteur }}</div>
+      <p>{{ recent_post.chapo }}</p>
+      <div class="more">
+        <a href="{{ recent_post.url }}">Lire la suite &raquo;</a>
+      </div>
     </div>
-  </div>
-  <div id="third-post" class="span-8 last">
-    {% assign third_post = site.posts[2] %}
-    <h3><a href="{{ third_post.url }}">{{ third_post.title }}</a></h3>
-    <div class="date">publié le {{ third_post.date | date:"%d/%m/%Y" }}</div>
-    <div class="auteur">auteur : {{ third_post.auteur }}</div>
-    <p>{{ third_post.chapo }}</p>
-    <div class="more">
-      <a href="{{ third_post.url }}">Lire la suite &raquo;</a>
+  {% endfor %}
+  {% for recent_post in site.posts limit:2 offset:3 %}
+    <div class="recent-post span-8 {% if forloop.first %}append-1{% else %}last{% endif %}">
+      <h3><a href="{{ recent_post.url }}">{{ recent_post.title }}</a></h3>
+      <div class="date">publié le {{ recent_post.date | date:"%d/%m/%Y" }}</div>
+      <div class="auteur">auteur : {{ recent_post.auteur }}</div>
+      <p>{{ recent_post.chapo }}</p>
+      <div class="more">
+        <a href="{{ recent_post.url }}">Lire la suite &raquo;</a>
+      </div>
     </div>
-  </div>
+  {% endfor %}
 </div>
 <div id="archives" class="span-17 last">
   <h2>archives</h2>
