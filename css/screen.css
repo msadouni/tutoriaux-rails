@@ -125,6 +125,13 @@ body {
 #main #post {
     margin-bottom: 2em;
 }
+#main #post #content {
+    margin-bottom: 3em;
+}
+#main #post #related {
+    border-top: 1px solid #ccc;
+    padding-top: 1em;
+}
 #main #articles-recents {
     margin-bottom: 2em;
 }
