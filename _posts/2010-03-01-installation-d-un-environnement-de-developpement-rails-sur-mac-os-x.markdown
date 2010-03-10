@@ -3,12 +3,11 @@ layout: post
 title: Installation d'un environnement de développement Rails sur Mac OS X
 category: configuration
 auteur: Matthieu Sadouni
-chapo:
+chapo: |
+  Avant de démarrer le développement proprement dit, il est nécessaire d'installer les logiciels nécessaires sur notre poste. Nous aurons évidemment besoin de Ruby et Rails. Pour la base de données, nous utiliserons MySQL. Nous installerons également Git pour versionner notre application. En ce qui concerne l'éditeur de texte ou IDE, chacun a sa préférence, nous donnerons simplement quelques pistes en fin d'article.
 description: |
   Toutes les étapes et outils pour installer un environnement complet de développement Rails sur Mac OS X : MacPorts, Git, MySQL, Ruby et Rails.
 ---
-
-Avant de démarrer le développement proprement dit, il est nécessaire d'installer les logiciels nécessaires sur notre poste. Nous aurons évidemment besoin de Ruby et Rails. Pour la base de données, nous utiliserons MySQL. Nous installerons également Git pour versionner notre application. En ce qui concerne l'éditeur de texte ou IDE, chacun a sa préférence, nous donnerons simplement quelques pistes en fin d'article.
 
 Ruby et Ruby On Rails sont fournis sur les versions récentes (10.5 et 10.6) de Mac OS X. Nous allons cependant en installer nos propres versions, cela permettra de les mettre à jour plus facilement par la suite. Nous utilisons pour cela MacPorts.
 

@@ -5,12 +5,11 @@ categories:
 - configuration
 - git
 auteur: Matthieu Sadouni
-chapo:
+chapo: |
+  Rails permet de générer le squelette de base d'une application grâce à la simple commande `rails mon-appli`. Cette application est par contre vide, or en général nous utilisons toujours plusieurs fonctionnalités dans chacun de nos applications : enregistrement et connexion d'utilisateurs, pagination de résultats, tests unitaires, etc.
 description: |
   Comment utiliser un modèle d'application pour la génération et le versionning avec Git pour faciliter la création d'un projet Rails.
 ---
-
-Rails permet de générer le squelette de base d'une application grâce à la simple commande `rails mon-appli`. Cette application est par contre vide, or en général nous utilisons toujours plusieurs fonctionnalités dans chacun de nos applications : enregistrement et connexion d'utilisateurs, pagination de résultats, tests unitaires, etc.
 
 Nous allons voir comment utiliser les modèles d'application pour générer un squelette incluant d'office les fonctionnalités couramment utilisées.
 
