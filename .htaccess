@@ -1,3 +1,5 @@
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^tutoriaux-rails\.com
+RewriteCond %{HTTP_HOST} ^tutoriaux-rails\.com [OR]
+RewriteCond %{HTTP_HOST} ^www\.tutoriaux-rails\.fr [OR]
+RewriteCond %{HTTP_HOST} ^tutoriaux-rails\.fr
 RewriteRule ^(.*)$ http://www.tutoriaux-rails.com/$1 [R=permanent,L]
