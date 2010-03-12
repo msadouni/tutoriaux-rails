@@ -4,8 +4,10 @@ layout: default
 
 <div id="post">
   <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-  <div class="date">publié le {{ page.date | date:"%d/%m/%Y" }}</div>
-  <div class="auteur">auteur : {{ page.auteur }}</div>
+  <p class="infos">
+    publié le {{ page.date | date:"%d/%m/%Y" }}
+    par {{ page.auteur }}
+  </p>
   <p>{{ page.chapo }}</p>
   <div id="content">
     {{ content }}

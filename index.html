@@ -5,35 +5,40 @@ title: accueil
 {% assign first_post = site.posts.first %}
 <div id="post">
   <h1><a href="{{ first_post.url }}">{{ first_post.title }}</a></h1>
-  <div class="date">publié le {{ first_post.date | date:"%d/%m/%Y" }}</div>
-  <div class="auteur">auteur : {{ first_post.auteur }}</div>
+  <p class="infos">
+    publié le {{ first_post.date | date:"%d/%m/%Y" }}
+    par {{ first_post.auteur }}
+  </p>
   <p>{{ first_post.chapo }}</p>
-  <div class="more">
+  <p class="more">
     <a href="{{ first_post.url }}">Lire la suite &raquo;</a>
-  </div>
+  </p>
 </div>
 <div id="articles-recents" class="span-17 last">
-  <h2>articles récents</h2>
   {% for recent_post in site.posts limit:2 offset:1 %}
     <div class="recent-post span-8 {% if forloop.first %}append-1{% else %}last{% endif %}">
       <h3><a href="{{ recent_post.url }}">{{ recent_post.title }}</a></h3>
-      <div class="date">publié le {{ recent_post.date | date:"%d/%m/%Y" }}</div>
-      <div class="auteur">auteur : {{ recent_post.auteur }}</div>
+      <p class="infos">
+        publié le {{ recent_post.date | date:"%d/%m/%Y" }}
+        par {{ recent_post.auteur }}
+      </p>
       <p>{{ recent_post.chapo }}</p>
-      <div class="more">
+      <p class="more">
         <a href="{{ recent_post.url }}">Lire la suite &raquo;</a>
-      </div>
+      </p>
     </div>
   {% endfor %}
   {% for recent_post in site.posts limit:2 offset:3 %}
     <div class="recent-post span-8 {% if forloop.first %}append-1{% else %}last{% endif %}">
       <h3><a href="{{ recent_post.url }}">{{ recent_post.title }}</a></h3>
-      <div class="date">publié le {{ recent_post.date | date:"%d/%m/%Y" }}</div>
-      <div class="auteur">auteur : {{ recent_post.auteur }}</div>
+      <p class="infos">
+        publié le {{ recent_post.date | date:"%d/%m/%Y" }}
+        par {{ recent_post.auteur }}
+      </p>
       <p>{{ recent_post.chapo }}</p>
-      <div class="more">
+      <p class="more">
         <a href="{{ recent_post.url }}">Lire la suite &raquo;</a>
-      </div>
+      </p>
     </div>
   {% endfor %}
 </div>
