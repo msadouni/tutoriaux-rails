@@ -71,7 +71,7 @@ La méthode `file` permet de créer un fichier avec un contenu donné.
 
 ### Installation de gems et plugins
 
-Une fois notre dépôt initialisé, nous allons pouvoir ajouter les gems et plugins couramment utilisés. Pour le moment nous nous en tiendrons au minimum : la pagination de résultats avec [WillPaginate](will_paginate). Le plugin d'inscription et de connexion des utilisateurs nécessitant plus d'explications, il fera l'objet d'un prochain article.
+Une fois notre dépôt initialisé, nous allons pouvoir ajouter les gems et plugins couramment utilisés. Pour le moment nous nous en tiendrons au minimum : la pagination de résultats avec [WillPaginate][will_paginate]. Le plugin d'inscription et de connexion des utilisateurs nécessitant plus d'explications, il fera l'objet d'un prochain article.
 
 Nous ajoutons les lignes suivantes à notre fichier modèle :
 
@@ -91,7 +91,7 @@ Nous allons également "freezer" Rails à la version utilisée dans l'applicatio
 
 ### Configuration de la base de données
 
-Par défaut, Rails utilise en mode de développement la base de données SQLite. Or nous avons installé à l'[étape précédente](installation-environnement) MySQL pour retrouver en développement la même configuration que sur notre futur serveur de production. Il nous faut donc modifier le fichier de configuration de la base de données pour y indiquer nos paramètres :
+Par défaut, Rails utilise en mode de développement la base de données SQLite. Or nous avons installé à l'[étape précédente][installation-environnement] MySQL pour retrouver en développement la même configuration que sur notre futur serveur de production. Il nous faut donc modifier le fichier de configuration de la base de données pour y indiquer nos paramètres :
 
     {% highlight ruby %}
     # Création du fichier de configuration de la base de données
@@ -138,4 +138,4 @@ Le contenu du fichier rails-modele.rb est également disponible en ligne :
 Nous sommes maintenant prêts à démarrer le développement proprement dit.
 
 [will_paginate]: http://github.com/mislav/will_paginate
-[installation-environnement]: http://blog/installation-environnement
+[installation-environnement]: /articles/installation-d-un-environnement-de-developpement-rails-sur-mac-os-x

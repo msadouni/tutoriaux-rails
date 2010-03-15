@@ -13,7 +13,7 @@ J'utilise Mac OS X, les instructions pour Windows XP sont donc indicatives.
 
 ### Installation de Git
 
-La meilleure option pour installer Git sur Windows semble être par l'intermédiaire de [msysGit](msysgit). Nous téléchargeons la dernière version stable et lançons l'installation.
+La meilleure option pour installer Git sur Windows semble être par l'intermédiaire de [msysGit][msysgit]. Nous téléchargeons la dernière version stable et lançons l'installation.
 
 À l'étape où apparaît un message en rouge et 3 choix nous choisissions la troisième option (l'option 1 est recommandée au cas où vous utilisez les utilitaires natifs de Windows find.exe et sort.exe, ceux-ci étant remplacés par leur version Unix avec l'option 3).
 
