@@ -98,6 +98,12 @@ body {
 #main p, #main li {
     font-size:1.167em;
 }
+#main p code, #main li code {
+    background: #E6E6E6;
+    border: 1px solid #D4D4D4;
+    color: #323232;
+    padding: 0px 4px;
+}
 #main pre {
     overflow-x: auto;
 }
@@ -135,6 +141,19 @@ body {
 #main .highlight .m, #main .highlight .mi, #main .highlight .ss {
     color: #CF6A4C;
 }
+#main .highlight .yaml .l-Scalar-Plain {
+    color: #F9EE98;
+}
+#main .highlight .yaml .p-Indicator {
+    color: #F9EE98;
+}
+#main .highlight .apacheconf {
+    color:#B0B0B0;
+}
+#main .highlight .apacheconf .nb {
+    color:#CF6A4C;
+}
+
 #main #post {
     margin-bottom: 2em;
 }
