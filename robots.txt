@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: http://www.tutoriaux-rails.com/sitemap.xml
