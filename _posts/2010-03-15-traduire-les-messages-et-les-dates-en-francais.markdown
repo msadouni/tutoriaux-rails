@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Traduire les messages du cœur
+title: Traduire les messages et les dates en français
 category: interaction
 auteur: Matthieu Sadouni
 chapo: |
   Rails est par défaut configuré en langue anglaise. Depuis la version 2.2 il est devenu très simple de traduire les messages du cœur comme les dates et les messages d'erreur. Voyons comment intégrer les traductions en français à notre application.
 description: |
-  Comment traduire les messages d'erreur et les dates du cœur de Rails.
+  Comment traduire les messages d'erreur et les dates du cœur de Rails en français.
 ---
 
 ### Récupération des traductions depuis GitHub
