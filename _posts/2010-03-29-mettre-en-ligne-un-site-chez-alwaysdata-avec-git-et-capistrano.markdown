@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Mettre en ligne un site chez Alwaysdata avec Git et Capistrano
-categories: configuration, git
+categories:
+- configuration
+- git
 auteur: Matthieu Sadouni
 chapo: La mise en ligne d'un site par chargement FTP est fastidieuse et source d'erreur. Voyons comment automatiser ce processus avec Capistrano, un outil de déploiement automatisé.
 description: |
