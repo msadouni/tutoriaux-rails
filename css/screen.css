@@ -52,6 +52,10 @@ body {
     position: absolute;
     bottom: 5px;
 }
+#header .twitter {
+    position: absolute;
+    bottom: 25px;
+}
 #sidebar {
     font-size: 1.167em;
 }
@@ -192,6 +196,12 @@ body {
     display: block;
     padding-left: 18px;
     background:url(/img/feed-icon-12x12-orange.gif) top left no-repeat;
+    line-height: 12px;
+}
+.twitter {
+    display: block;
+    padding-left: 18px;
+    background:url(/img/twitter-12x12.png) top left no-repeat;
     line-height: 12px;
 }
 #footer {
