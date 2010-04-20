@@ -3,7 +3,7 @@ layout: post
 title: Définir le titre et la description des pages
 category: interaction
 auteur: Matthieu Sadouni
-chapo: Le titre et la description de chaque page d'un site sont très important pour obtenir un bon référencement naturel. Voyons comment définir de manière très simple le titre et la description de nos pages.
+chapo: Le titre et la description de chaque page d'un site sont très importants pour obtenir un bon référencement naturel. Voyons comment définir de manière très simple le titre et la description de nos pages.
 description: |
   Comment définir le titre et la description des pages pour optimiser le référencement.
 ---
