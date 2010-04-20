@@ -99,7 +99,7 @@ Nous préparons ensuite notre application à être déployée :
     $ capify .
     {% endhighlight %}
 
-Cette commande génère deux fichiers : `Capfile` et `config/deploy.rb`. `Capfile` permet à Capistrano de charger les fichiers contenant les tâches à effectuer pour le déploiement. `config/deploy.rb` va contenir les instructions de déploiement de notre site. Nous allons également créer un fichier `config/deploy/production.rb` qui va contenir les paramètres relatif à l'environnement.
+Cette commande génère deux fichiers : `Capfile` et `config/deploy.rb`. `Capfile` permet à Capistrano de charger les fichiers contenant les tâches à effectuer pour le déploiement. `config/deploy.rb` va contenir les instructions de déploiement de notre site.
 
     # config/deploy.rb
     {% highlight ruby %}
