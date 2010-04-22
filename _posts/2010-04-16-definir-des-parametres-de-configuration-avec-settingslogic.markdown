@@ -34,7 +34,7 @@ Nous commençons par créer la classe `Settings` nous permettant d'accéder aux 
 
     # app/models/settings.rb
     {% highlight ruby %}
-    class Settings < SettingsLogic
+    class Settings < Settingslogic
       source "#{Rails.root}/config/application.yml"
       namespace Rails.env
       load!
