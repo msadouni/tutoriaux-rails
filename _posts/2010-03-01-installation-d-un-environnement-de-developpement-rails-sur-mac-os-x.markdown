@@ -68,6 +68,12 @@ Une fois MySQL installé nous paramétrons les bases de données :
     sudo mysql_install_db5
     {% endhighlight %}
 
+En cas d'erreur, indiquer le bon utilisateur (merci à Denis pour avoir trouvé une solution ):
+
+    {% highlight bash %}
+    sudo mysql_install_db5 --user=_mysql
+    {% endhighlight %}
+
 Nous chargeons MySQL au démarrage de la session :
 
     {% highlight bash %}
