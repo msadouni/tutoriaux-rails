@@ -3,7 +3,7 @@ layout: post
 title: Annuler la suppression d'un enregistrement avec ActsAsArchive
 category: interaction
 auteur: Matthieu Sadouni
-chapo: En général, dans une application, nous demandons confirmation à l'utilisateur avant de supprimer un enregistrement. Cependant il est facile de cliquer trop rapidement sur "Ok", et l'enregistrement est alors supprimé sans possibilité d'annulation. Voyons comment archiver un enregistrment au lieu de le supprimer complètement, et comment proposer l'annulation de la suppression.
+chapo: En général, dans une application, nous demandons confirmation à l'utilisateur avant de supprimer un enregistrement. Cependant il est facile de cliquer trop rapidement sur "Ok", et l'enregistrement est alors supprimé sans possibilité d'annulation. Voyons comment archiver un enregistrement au lieu de le supprimer complètement, et comment proposer l'annulation de la suppression.
 description: |
   Comment archiver un enregistrement supprimé et proposer sa restauration avec ActsAsArchive.
 ---
