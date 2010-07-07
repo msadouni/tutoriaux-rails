@@ -37,7 +37,7 @@ Rails reconnaît dans cette commande que nous souhaitons ajouter à la table `us
 Nous modifions la ligne `add_column` pour spécifier que la colonne est à `false` par défaut, et ne peut être nulle :
 
     {% highlight ruby %}
-    add_column :users, :active, :boolean, :default => false, :null => false
+    add_column :users, :actif, :boolean, :default => false, :null => false
     {% endhighlight %}
 
 Nous appliquons la migration sur la base de données :
