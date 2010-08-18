@@ -30,8 +30,8 @@ Ce `yield` définit un emplacement où sera inséré le contenu de la vue actuel
     {% highlight erb %}
     <html>
     <head>
-      <title><%= yield(:title) ||= "Le titre par défaut" %></title>
-      <meta name="description" content="<%= yield(:description) ||= "La description par défaut" %>" />
+      <title><%= yield(:title) || "Le titre par défaut" %></title>
+      <meta name="description" content="<%= yield(:description) || "La description par défaut" %>" />
     <body>
       <div id="content">
         <%= yield %>
@@ -40,7 +40,7 @@ Ce `yield` définit un emplacement où sera inséré le contenu de la vue actuel
     </html>
     {% endhighlight %}
 
-L'opérateur `||=` permet de n'affecter une valeur que si la valeur à gauche est `nil`. Nous pouvons ainsi omettre de définir le titre ou la description sans rencontrer d'erreur, la valeur par défaut donnée dans le layout étant alors prise en compte à la place.
+Si `:title` ou `:description` sont vides, `yield` ne retournera rien, sans lever d'exception. Nous pouvons ainsi omettre de définir le titre ou la description pour une vue donnée, la valeur par défaut indiquée dans le layout étant alors prise en compte.
 
 Il ne nous reste plus qu'à renseigner `:title` et `:description` dans les vues.
 
@@ -83,7 +83,7 @@ Le seul petit souci est que nous devons ajouter 6 lignes de code à chaque vue. 
         content_for(:title) { title }
       end
 
-      def description(:description)
+      def description(description)
         content_for(:description) { description }
       end
     end
