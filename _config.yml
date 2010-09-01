@@ -1,6 +1,6 @@
 permalink: /articles/:title
 pygments: true
-lsi: true
+lsi: false
 exclude:
 - README.markdown
 - Rakefile
